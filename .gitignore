@@ -1,0 +1,46 @@
+# Python files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.pyc
+
+# Django specific
+*.log
+*.pot
+*.egg-info/
+*.egg
+*.cache/
+db.sqlite3
+media/
+env/
+*.sqlite3
+
+# Virtual environment
+venv/
+.virtualenv/
+*.env
+.Python
+
+# Miscellaneous
+*.bak
+*.swp
+*.swo
+*~
+.DS_Store
+._*
+*Thumbs.db
+.idea/
+.vscode/
+__MACOSX/
+*.pyo
+*.bak
+*.sublime-project
+*.sublime-workspace
+*.pyc
+*.suo
+*.user
+*.sln.docstates
+*.pyc
+*.cache
+*.swo
