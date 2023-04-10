@@ -1,28 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-    {% extends 'main.html' %}
-    {% block content %}
-
-    <div>
-        {% for room in rooms %}
-            <div>
-                <h3>{{room.id}} -- {{room.name}}</h3>
-            </div>
-        {% endfor %}
-    </div> 
-    <h1>This is a home page Template</h1>
-         
-    
-
-
-    {%  endblock content %}
-</body>
+    <title>StudyCamp</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="logo">
+        <img src="logo.png" alt="StudyCamp Logo">
+        <h1>StudyCamp</h1>
+      </div>
+      <div class="cta">
+        <a href="#">Join StudyCamp</a>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <h2>Join the Community of Learners and Programmers at StudyCamp</h2>
+        <p>StudyCamp is a platform designed to help learners and programmers connect, collaborate, and learn from each other. Whether you are a beginner or an experienced developer, we have the resources and community to help you achieve your goals.</p>
+      </section>
+      <section class="features">
+        <h2>Why Choose StudyCamp?</h2>
+        <div class="feature">
+          <img src="feature1.png" alt="Feature 1 Icon">
+          <h3>Learn at Your Own Pace</h3>
+          <p>With StudyCamp, you can learn at your own pace and on your own schedule. Our courses are designed to be flexible, so you can fit learning into your busy life.</p>
+        </div>
+        <div class="feature">
+          <img src="feature2.png" alt="Feature 2 Icon">
+          <h3>Connect with Peers</h3>
+          <p>Join a community of learners and programmers from around the world. Connect with peers, share knowledge, and collaborate on projects.</p>
+        </div>
+        <div class="feature">
+          <img src="feature3.png" alt="Feature 3 Icon">
+          <h3>Expert Instructors</h3>
+          <p>Our courses are taught by industry experts with years of experience. Learn from the best and get the skills you need to succeed.</p>
+        </div>
+      </section>
+      <section class="call-to-action">
+        <h2>Ready to Start Learning?</h2>
+        <div class="cta">
+          <a href="#">Join StudyCamp</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 StudyCamp</p>
+    </footer>
+  </body>
 </html>
